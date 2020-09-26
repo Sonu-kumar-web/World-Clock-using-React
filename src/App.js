@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+class App extends React.Component {
+   state = { username: "", password: "" };
+
+   render() {
+      return (
+         <Fragment>
+            <div className="form-div">
+               <form>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Email address</label>
+                     <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                     />
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputPassword1">Password</label>
+                     <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                     />
+                  </div>
+                  <button type="submit" class="btn btn-primary ">
+                     Reset
+                  </button>
+                  <button type="submit" class="btn btn-primary ml-3">
+                     Login
+                  </button>
+               </form>
+            </div>
+         </Fragment>
+      );
+   }
 }
 
 export default App;
