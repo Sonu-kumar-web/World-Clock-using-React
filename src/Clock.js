@@ -122,7 +122,7 @@ export default class Clock extends Component {
                         </p>
                      </div>
                      <div className="col-xl-2 col-lg-4 col-md-12 ">
-                        <p className="float-lg-right ">{`Indian: ${IndianTime}`}</p>
+                        <p className="float-lg-right float-md-right">{`Indian: ${IndianTime}`}</p>
                      </div>
                   </div>
                </div>
