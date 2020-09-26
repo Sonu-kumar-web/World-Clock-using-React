@@ -106,7 +106,7 @@ export default class Clock extends Component {
                <div class="container show-time">
                   <div class="row">
                      <div className="col-xl-3  col-lg-12 col-md-12">
-                        <span className="float-md-right float-lg-left">
+                        <span className="float-md-right float-lg-left float-sm-right float-right">
                            {" "}
                            United State:
                            <span
@@ -117,12 +117,12 @@ export default class Clock extends Component {
                         </span>
                      </div>
                      <div className="col-xl-2  col-lg-3 col-md-12 ">
-                        <p className="float-lg-left float-md-right">
+                        <p className="float-lg-left float-md-right float-sm-right float-right">
                            {`London: ${LondonTime}`}
                         </p>
                      </div>
                      <div className="col-xl-2 col-lg-4 col-md-12 ">
-                        <p className="float-lg-right float-md-right">{`Indian: ${IndianTime}`}</p>
+                        <p className="float-lg-right float-md-right float-sm-right float-right">{`Indian: ${IndianTime}`}</p>
                      </div>
                   </div>
                </div>
@@ -130,7 +130,7 @@ export default class Clock extends Component {
                <div className="container">
                   <div className="row">
                      <div className="col-xl-4 col-lg-7 mt-3">
-                        <span>
+                        <span className="float-sm-right float-right">
                            The time difference for London:{" "}
                            <input
                               type="text"
@@ -141,7 +141,7 @@ export default class Clock extends Component {
                         </span>
                      </div>
                      <div className="col-xl-4 col-lg-7 mt-3">
-                        <span>
+                        <span className="float-sm-right float-right">
                            The time difference for India:{" "}
                            <input
                               type="text"
